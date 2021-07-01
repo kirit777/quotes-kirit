@@ -1,3 +1,13 @@
+<!-- 
+	Developer : Gareja kirit
+Mobile : 7043805425
+Email : garejakirit@gmail.com
+webSite : garejakirit.ga
+github : https://github.com/kirit777
+instagram : https://www.instagram.com/gareja_kirit/ 
+
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,7 +114,7 @@ fjs.parentNode.insertBefore(js, fjs);
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-</script>
+</script>firebase init
 
 </body>
 </html>
