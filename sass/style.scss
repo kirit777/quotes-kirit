@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+:root{
+    --sd: 1px 1px 1px #000;
+}
+.MainDiv{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: hsl(140, 100%, 80%);
+
+    & .CenterDiv{
+        height: 60vh;
+        width: 60vw;
+        display: grid;
+        place-items: center;
+        background-color: hsl(204, 100%, 40%);
+        border-radius: 30px 0px 30px 0px;
+        box-shadow: 10px 4px 20px #000;
+        position: relative;
+        overflow: hidden;
+        & #fas{
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            color: hsl(198, 16%, 84%);
+            text-shadow: var(--sd);
+            font-size: 2rem;
+        }
+
+        & #msg{
+            position: absolute;
+            left: 15%;
+            top: 30%;
+            color: #fff;
+            text-shadow: var(--sd);       
+        }
+
+        & #btn{
+            position: absolute;
+            height: 3rem;
+            width: 100%;
+            background-color: hsl(204, 100%, 30%);
+            color: #fff;
+            text-align: center;
+            bottom: -2%;
+            font-size: 1.4rem;
+            padding-top: .5rem;
+            text-shadow: var(--sd);   
+            letter-spacing: .2rem;
+        }
+
+        & .TweetDiv{
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            height: 200px;
+            width: 150px;
+            background-color: hsl(199, 91%, 64%);
+            transform: rotate(-40deg); 
+            display: grid;
+            place-items: center;
+            box-shadow: 0px 0px 30px  hsl(199, 91%, 64%);
+
+            
+        }
+
+        & i:last-child{
+            position: absolute;
+            top: 5%;
+            right: 2%;
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: var(--sd);
+            transition:  1s linear;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+
+        & .AuthorDiv{
+
+            position: absolute;
+            left: 70%;
+            top: 60%;
+
+            & p{
+                margin-left: .5rem;
+
+                &:nth-child(1){
+                    color: hsl(184, 6%, 81%);
+                    text-shadow: 1px 1px 1px #000;
+                }
+            }
+            & p:last-child{
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+            }
+        }
+    }
+}
+@media (max-width: 300px) and (min-width: 100px) {
+    .MainDiv{
+        height: 100vh;
+        width: 100vw;
+    
+        & .CenterDiv{
+            height: 55vh;
+            width: 70%;
+            padding: .5rem;
+
+            & #fas{
+                position: absolute;
+                left: 10%;
+                top: 20%;
+                font-size: 2rem;
+            }
+    
+            & #msg{
+                position: absolute;
+                left: 15%;
+                top: 30%;
+                      
+            }
+    
+            & #btn{
+                position: absolute;
+                height: 3rem;
+                width: 100%;
+                bottom: -2%;
+                font-size: 1.4rem;
+                padding-top: .5rem;   
+                letter-spacing: .2rem;
+            }
+    
+            & .TweetDiv{
+                position: absolute;
+                top: -20%;
+                right: -40%;
+                height: 200px;
+                width: 150px;
+                background-color: hsl(199, 91%, 64%);
+                transform: rotate(-40deg); 
+                display: grid;
+                place-items: center;
+                box-shadow: 0px 0px 30px  hsl(199, 91%, 64%);
+    
+                
+            }
+    
+            & i:last-child{
+                position: absolute;
+                top: 5%;
+                right: 2%;
+                font-size: 2rem;
+                color: #fff;
+                text-shadow: var(--sd);
+                transition:  1s linear;
+    
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+    
+            & .AuthorDiv{
+    
+                position: absolute;
+                left: 10%;
+                top: 70%;
+    
+                & p{
+                    margin-left: .5rem;
+    
+                    &:nth-child(1){
+                        color: hsl(184, 6%, 81%);
+                        text-shadow: 1px 1px 1px #000;
+                    }
+                }
+                & p:last-child{
+                    color: #fff;
+                    text-shadow: 1px 1px 1px #000;
+                }
+            }
+        }
+    }   
+
+}
+@media (max-width: 600px) and (min-width: 301px) {
+    .MainDiv{
+        height: 100vh;
+        width: 100vw;
+    
+        & .CenterDiv{
+            height: 55vh;
+            width: 70%;
+            padding: .5rem;
+
+            & #fas{
+                position: absolute;
+                left: 10%;
+                top: 20%;
+                font-size: 2rem;
+            }
+    
+            & #msg{
+                position: absolute;
+                left: 15%;
+                top: 30%;
+                      
+            }
+    
+            & #btn{
+                position: absolute;
+                height: 3rem;
+                width: 100%;
+                bottom: -2%;
+                font-size: 1.4rem;
+                padding-top: .5rem;   
+                letter-spacing: .2rem;
+            }
+    
+            & .TweetDiv{
+                position: absolute;
+                top: -20%;
+                right: -40%;
+                height: 200px;
+                width: 150px;
+                background-color: hsl(199, 91%, 64%);
+                transform: rotate(-40deg); 
+                display: grid;
+                place-items: center;
+                box-shadow: 0px 0px 30px  hsl(199, 91%, 64%);
+    
+                
+            }
+    
+            & i:last-child{
+                position: absolute;
+                top: 5%;
+                right: 2%;
+                font-size: 2rem;
+                color: #fff;
+                text-shadow: var(--sd);
+                transition:  1s linear;
+    
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+    
+            & .AuthorDiv{
+    
+                position: absolute;
+                left: 10%;
+                top: 70%;
+    
+                & p{
+                    margin-left: .5rem;
+    
+                    &:nth-child(1){
+                        color: hsl(184, 6%, 81%);
+                        text-shadow: 1px 1px 1px #000;
+                    }
+                }
+                & p:last-child{
+                    color: #fff;
+                    text-shadow: 1px 1px 1px #000;
+                }
+            }
+        }
+    }   
+
+}
